@@ -3311,15 +3311,7 @@ renderHeat();
   }
 })();
 
-<script>
-(function(){
-  if(!('serviceWorker' in navigator)) return;
-  window.addEventListener('load', function(){
-    navigator.serviceWorker.register('./sw.js').then(function(reg){
-      console.log('[PWA] SW registered');
-    }).catch(function(e){ console.log('[PWA] SW skip:', e); });
-  });
-})();
+
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
