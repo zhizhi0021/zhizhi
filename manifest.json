@@ -1,18 +1,27 @@
 {
-  "name": "芝芝工作台 · 每日打卡",
-  "short_name": "芝芝工作台",
-  "description": "手机端工作台：学习（英语四级/护理/练字/表达）、清单、运动跟练、备忘录、账户记账复盘。莫兰迪色系，打卡模式带百分比。",
-  "start_url": "./index.html",
-  "scope": "./",
+  "name": "未来的自己",
+  "short_name": "成长工作台",
+  "start_url": "/zhizhi/",
+  "scope": "/zhizhi/",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#EFEEEA",
-  "theme_color": "#EAE7E0",
-  "lang": "zh-CN",
+  "background_color": "#f7f5f0",
+  "theme_color": "#c8e2d4",
   "icons": [
-    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
-  ],
-  "categories": ["productivity", "education", "lifestyle"]
+    {
+      "src": "/zhizhi/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/zhizhi/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/zhizhi/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }
