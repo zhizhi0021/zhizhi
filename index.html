@@ -3320,8 +3320,19 @@ renderHeat();
     }).catch(function(e){ console.log('[PWA] SW skip:', e); });
   });
 })();
-</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => {
+        console.log('SW注册成功', reg.scope);
+      })
+      .catch(err => {
+        console.error('SW注册失败:', err);
+      });
   });
-}</script>
+}
+</script>
+
 </body>
 </html>
